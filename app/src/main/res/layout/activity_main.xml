@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.natlia.foodlovers.MainActivity"
+    android:background="@color/colorAccent">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:background="@drawable/ic_txtemail"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_txtsenha"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textViewFacaLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAÇA LOGIN PARA COMEÇAR"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignTop="@+id/editTextSenha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnentrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_btnentrar"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/textViewFacaLogin"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewEsqueceuSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:text="Esqueci a senha"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/editTextSenha"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:linksClickable="true"
+        android:text="Criar uma conta"
+        android:textColor="@color/colorPrimary"
+        android:textSize="7pt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewEsqueceuSenha" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_logohorizontal"
+        android:layout_alignBottom="@+id/textViewFacaLogin"
+        android:layout_alignStart="@+id/btnentrar" />
+
+    <Button
+        android:id="@+id/btnfacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_btnface"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
