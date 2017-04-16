@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.natlia.foodlovers.FiltroActivity">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="24dp"
+        android:text="Ajuste de descoberta"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewDistMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewTitulo"
+        android:layout_below="@+id/textViewTitulo"
+        android:layout_marginTop="16dp"
+        android:text="Distância máxima"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/textViewDistValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textViewDistMax"
+        android:layout_marginEnd="44dp"
+        android:text="11Km"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <SeekBar
+        android:id="@+id/seekBarDistancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewDistValor"
+        android:layout_alignStart="@+id/textViewDistMax"
+        android:layout_below="@+id/textViewDistMax"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/seekBarDistancia"
+        android:layout_below="@+id/seekBarDistancia"
+        android:layout_marginTop="16dp"
+        android:text="Procurando por"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/textViewIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Faixa etária"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/radioButtonHomens"
+        android:layout_alignStart="@+id/radioButtonHomens" />
+
+    <RadioButton
+        android:id="@+id/radioButtonHomens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="7dp"
+        android:text="Homens"
+        app:buttonTint="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <RadioButton
+        android:id="@+id/radioButtonAmbos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radioButton3"
+        android:layout_alignBottom="@+id/radioButton3"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/radioButton3"
+        android:text="Ambos"
+        android:textColor="@color/colorPrimaryDark"
+        app:buttonTint="@color/colorPrimaryDark" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radioButtonHomens"
+        android:layout_alignBottom="@+id/radioButtonHomens"
+        android:layout_marginStart="7dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="Mulheres"
+        android:textColor="@color/colorPrimaryDark"
+        app:buttonTint="@color/colorPrimaryDark" />
+
+    <SeekBar
+        android:id="@+id/SeekBarIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/seekBarDistancia"
+        android:layout_alignStart="@+id/textViewIdade"
+        android:layout_below="@+id/textViewIdade"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/SeekBarIdade"
+        android:layout_below="@+id/SeekBarIdade"
+        android:layout_marginTop="16dp"
+        android:text="Preferências"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/textViewTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_toEndOf="@+id/textView5"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Nome da Tag"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="14dp"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Nome da Tag"
+        android:textColor="@color/colorPrimaryDark" />
+</RelativeLayout>

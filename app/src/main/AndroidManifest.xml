@@ -16,7 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CadastroActivity"></activity>
+        <activity android:name=".CadastroActivity" />
+        <activity android:name=".principalActivity" />
+        <activity android:name=".PerfilActivity" />
+        <activity android:name=".MatchActivity" />
+        <activity android:name=".FiltroActivity"></activity>
     </application>
 
 </manifest>

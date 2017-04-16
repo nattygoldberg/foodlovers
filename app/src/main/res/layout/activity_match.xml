@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.natlia.foodlovers.MatchActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:scaleType="fitCenter"
+        android:scaleY="2"
+        app:srcCompat="@drawable/ic_imgmulher"
+        tools:scaleX="2"
+        android:layout_marginBottom="91dp"
+        android:layout_above="@+id/textViewNome"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome da Pessoa, 99"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="102dp"
+        android:textSize="10pt"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnfoguinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewNome"
+        android:background="@drawable/ic_btnfoguinho"
+        android:scaleX="1.2"
+        android:scaleY="1.2" />
+
+    <Button
+        android:id="@+id/btncoracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_toEndOf="@+id/btnfoguinho"
+        android:background="@drawable/ic_btncoracao"
+        android:scaleX="1.2"
+        android:scaleY="1.2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:scaleX="5"
+        android:scaleY="5"
+        app:srcCompat="@drawable/ic_fundorosaopacidade" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.7"
+        android:scaleY="1.7"
+        app:srcCompat="@drawable/ic_itsamatch"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_marginTop="25dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_coracaobranco"
+        android:layout_marginEnd="30dp"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="57dp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_img2"
+        android:layout_marginEnd="10dp"
+        android:layout_above="@+id/btnfoguinho"
+        android:layout_alignEnd="@+id/imageView5"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignStart="@+id/btnfoguinho"
+        android:layout_marginStart="31dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_img1"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignEnd="@+id/btncoracao"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@+id/btnfoguinho"
+        android:layout_above="@+id/btncoracao"
+        android:layout_alignStart="@+id/btncoracao"
+        android:layout_marginBottom="11dp" />
+
+    <Button
+        android:id="@+id/btnprocurar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_btnprocurar"
+        android:layout_alignBaseline="@+id/textViewNome"
+        android:layout_alignBottom="@+id/textViewNome"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnprocurar"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_btninfo"
+        android:scaleY="1.7" />
+
+
+</RelativeLayout>
